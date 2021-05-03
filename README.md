@@ -16,9 +16,13 @@ Converted the data output from being completely random.  Random number generatio
 text Summaries (a.k.a. descriptions of how the weather feels) "Scorching", "Freezing" that were completely unrelated to predicted temperatures.  30F might be "Scorching", 
 and 100F "Freezing".  Also the temperature progression over 5-days ... each day was completely unrelated to adjacent days.  Temperatures could be 32, 100, 32, 100, 32...
 a truly ridiculous temperature sequence.  Theoretically possible on Earth, but pretty much apocolyptic conditions.
-	a) Tied the temperature ranges to 'Summaries'.  Avoids the 100F == "Freezing" issue.
+
+	a) Tied the temperature ranges to 'Summaries'.  Avoids the 100F == "Freezing" issue.	
+	
 	b) Built a List<WeatherForecast>, populate List so that temperatures are in a reasonable sequence.  Avoids the 32, 100, 32 issue.
+	
 	c) Change the forecast to 7 days rather than 5.
+	
 	d) Other minor changes.
 
 Other thoughts:
