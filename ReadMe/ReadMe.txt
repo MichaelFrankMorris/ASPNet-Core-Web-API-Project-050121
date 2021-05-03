@@ -18,3 +18,12 @@ a truly ridiculous temperature sequence.  Theoretically possible on Earth, but p
 	b) Built a List<WeatherForecast>, populate List so that temperatures are in a reasonable sequence.  Avoids the 32, 100, 32 issue.
 	c) Change the forecast to 7 days rather than 5.
 	d) Other minor changes.
+
+Other thoughts:
+1) Ideally, I would at least convert "Summaries" into a SQL table with temperature ranges.  Right now if someone added a new description/Summary in the array, they would
+have to remember to modify other lines in the Controller.  
+2) Several "Summaries" entries may depend on humidity.  Expand all to include humidity if an accurate representation of "Summaries" (description) is actually important.
+3) Expand to grab actual weather forecasts from another site or app.  
+4) At least read the current temperature (and humidity), be aware of season, longitude, typical weather
+patterns, and make predictions based on current and previous data.
+5) Tap into at least one actual (already existent) weather model.  
